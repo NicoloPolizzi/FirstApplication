@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap');
+
+html, body{
+    width:100%;
+    height:100%;
+    font-family: "Roboto", sans-serif;
+}
+.title{
+    font-size: 3.5rem;
+    color:#fcfcff;
+    font-weight: 900;
+    position: relative;
+    top:100px;
+    z-index: 0;
+    opacity: 0;
+}
+.terminal{
+    position: absolute;
+    margin:30px;
+    padding:10px;
+    width:40%;
+    height:40%;
+}
+#bar{
+    position: relative;
+    width: 100%;
+    border:1px solid rgb(85, 85, 85);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: rgb(85, 85, 85);
+}
+.circle{
+    position:relative;
+    top:2px;
+    left:2px;
+    float:left;
+    width:15px;
+    height:15px;
+    border-radius: 50%;
+}
+.inline-block{
+    position: relative;
+    top:-3px;
+    left:4px;
+    display:inline-block;
+    font-size: large;
+    text-align: center;
+}
+
+.red{
+    background-color: red;
+}
+.grey{
+    background-color: grey;
+}
+#write{
+    width:100.2%;
+    height:100%;
+    border:0px;
+    background-color: black;
+}
+.terminal-title{
+    position: relative;
+    left:10px;
+    display:inline-block;
+    font-size: medium;
+    text-align: center;
+    font-weight: bold;
+    color:white;
+}
+.bottone:active{
+    background-color: green;
+}
+.bottone:hover{
+    cursor:pointer;
+}
+textarea{
+    background-color: black;
+    width:99%;
+    height:98%;
+    font-size: larger;
+    color:white;
+    border:none;
+    resize: none;
+}
+textarea:focus{
+    outline:none;
+}
+.bottone{
+    position: relative;
+    top:-2px;
+    left:-6px;
+    background-color: grey;
+    border:1px solid black;
+    border-radius: 50%;
+}
+.red>.inline-block>.bottone{
+    background-color: red;
+}
+.red>.inline-block>.bottone:active{
+    background-color: green;
+}
+.red>.inline-block>.bottone:hover{
+    cursor:pointer;
+}
+.empty{
+    width:3px;
+    height:2px;
+    border:0px;
+}
+video{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+#videoBox{
+    position:relative;
+    top:20px;
+    left:50%;
+    max-width: 500px;
+    max-height: 50px;
+}
+
+
+
+
+.calcolatrice{
+    margin:20px;
+    padding:20px;
+    min-width: 240px;
+    min-height: 230px;
+    width:20%;
+    height: 30%;
+}
+.calcolatrice .display{
+    border:15px solid rgb(154, 150, 150);
+    width: 100%;
+    height: 10%;
+    font-family: "Orbitron", sans-serif;
+}
+.calcolatrice .numbers{
+    border:15px solid rgb(154, 150, 150);
+    width: 100%;
+    height: 100%;
+}
+.calcolatrice .numbers table{
+    width: 100%;
+    height: 100%;
+}
+#display_text{
+    font-size: 20px;
+    overflow: hidden;
+    resize:none;
+    border:1px solid black;
+    border-radius: 5px;
+    background-color: rgb(225, 217, 217);
+    color:black;
+}
+.calcolatrice .numbers .button{
+    width:100%;
+    height: 100%;
+    border-radius: 3px;
+    background-color: rgb(201, 194, 194);
+}
+.interface{
+    z-index: 0;
+    position:sticky;
+    top:70%;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    opacity: 0;
+}
+.interface button{
+    border-radius: 10px;
+    background: transparent;
+    min-width: 120px;
+    width:8%;
+    height: 10%;
+    transition: .1s all ease-in-out;
+}
+.interface button:hover{
+    background-color:rgb(255,255,255,50);
+    transform: scale(1.1);
+}
+.interface .bx{
+    font-size: 100px;
+}
+
+#calc .circle button{
+    position: relative;
+    background-color: red;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left:0px;
+    z-index: 1;
+}
+
+.weath{
+    font-family: Nunito;
+    font-size: larger;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/A_blue_sky8.JPG/1200px-A_blue_sky8.JPG");
+    margin-top:10%;
+    display: flex;
+    flex-direction: column;
+    border:1px solid black;
+    height: 30%;
+    width: 300px;
+    min-height:250px;
+    text-align: center;
+}
+input[type="text"]{
+    font-family: Nunito;
+    margin-top: 2px;
+    background: linear-gradient(top right, #FFFFFF 0%, #62a5e0 100%);
+    position: relative;
+    left:-1px;
+    height: 25px;
+    width: 90%;
+    border-radius: 2px;
+    font-weight: bolder;
+    font-size: 25px;
+    border-radius: 2px;
+    text-align: center;
+}
+input[type="button"]{
+    margin-top: 2px;
+    font-family: Nunito;
+    background:rgba(2, 55, 55, 0);
+    border:1px solid black;
+    height: 25px;
+    width: 50%;
+    font-weight: bolder;
+    font-size: 15px;
+    border-radius: 2px;
+}
+input[type="button"]:hover{
+    cursor:pointer;
+}
+.weatherDisplay{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+}
+.weath .circle button{
+    position: relative;
+    background-color: red;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left:0px;
+    z-index: 1;
+}
+.barra{
+    background-color:rgb(85, 85, 85);
+    min-height: 16px;
+}
+.weatherDisplay h1,p{
+    margin:2px;
+}
+.weatherDisplay p{
+    font-family: Nunito;
+    font-size: 25px;
+    font-weight: 500;
+    margin:2px;
+}
+.imageContainer{
+    display: flex;
+    align-items: center;
+}
